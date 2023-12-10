@@ -1,0 +1,149 @@
+@font-face{
+  font-family: 'AeonikPro';
+  src: url('../fonts/AeonikProTRIAL-Regular.woff') format('woff'), url('../fonts/AeonikProTRIAL-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'AeonikPro';
+  src: url('../fonts/AeonikProTRIAL-Bold.woff') format('woff'), url('../fonts/AeonikProTRIAL-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Regular.woff') format('woff'), url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Medium.woff') format('woff'), url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Bold.woff') format('woff'), url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'AeonikPro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F4F7FD;
+}
+
+p{
+  font-family: 'SFProDisplay', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './scss/hamburguers.scss';
+@import './scss/typography.scss';
+
+.advantageCard{
+  position: relative;
+  z-index: 2;
+
+  &::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: -5%;
+    width: calc(100% - 16px);
+    height: 100%;
+    border-radius: 16px;
+    border: 1px solid #C0C2C7;
+    z-index: 0;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: #F4F7FD;
+    filter: drop-shadow(0px 12px 27.1px rgba(12, 30, 62, 0.12));
+    z-index: 1;
+  }
+  svg, p{
+    z-index: 3;
+    position: relative;
+  }
+}
+
+.feedbackSwiper{
+  overflow: visible!important;
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  top: -5% !important;
+  right: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  &::after {
+    content: "" !important;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+
+    background-image: url("../svg/arrowRightSwiper.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+}
+.swiper-button-prev {
+  position: absolute !important;
+  top: -5% !important;
+  left: calc(100% - 64px) !important;
+  width: 24px !important;
+  height: 24px !important;
+  &::after {
+    content: "" !important;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+
+    background-image: url("../svg/arrowLeftSwiper.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+}
+
+.swiper-pagination-custom{
+  position: absolute !important;
+  top: -11% !important;
+  left: calc(100% - 120px) !important;
+  width: auto!important;
+  color: #5E56F2;
+}
+.ctadiv{
+  background: radial-gradient(324.88% 141.42% at 100% 0%, #0C1E3E 0%, #040810 100%);
+}

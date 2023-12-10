@@ -1,0 +1,17 @@
+.purple-gradient-title {
+  background: linear-gradient(90deg, #5E56F2 0%, #847EF1 83.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.blue-gradient-title {
+  background: linear-gradient(90deg, #5281D8 0%, #85A4DF 22.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}/*# sourceMappingURL=typography.css.map */
