@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React,{useState, useEffect, useRef} from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import { Navigation, Pagination } from 'swiper/modules'
@@ -7,6 +7,13 @@ import 'swiper/css/pagination';
 
 //svgs and imgs
 import { DoubleQuoteIcon } from "../assets/Icons";
+
+//gsap
+import {gsap} from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 const feedbacksData = [
   {
@@ -41,16 +48,31 @@ const feedbacksData = [
   },
 ]
 
-
-
 const Feedbacks = () =>{
-  
+
+  const section04Ref = useRef(null)
+  React.useEffect(() =>{
+    const el = section04Ref.current
+    gsap.fromTo(el, {opacity: 0, y: 100}, {
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 80%', 
+        end: 'center 60%',
+        scrub: true,
+      }
+    })
+
+    ScrollTrigger.refresh()
+  },[])
 
   return (
     <>
-    <section className="py-24 px-6 overflow-hidden">
+    <section className="py-24 px-6 md:max-w-screen-xl md:mx-auto overflow-hidden md:py-32" ref={section04Ref}>
       <div className="flex flex-col">
-      <h2 className="font-sans text-3xl text-purple-80">O que nossos clientes dizem:</h2>
+      <h2 className="font-sans text-3xl md:text-4xl text-purple-80">O que nossos clientes dizem:</h2>
       </div>
       <Swiper
         pagination={{
@@ -64,10 +86,24 @@ const Feedbacks = () =>{
         className="feedbackSwiper mt-14"
         slidesPerView={1}
         spaceBetween={32}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+        }}
       >
       {feedbacksData.map(({name, occupation, message}, index) => (
         <SwiperSlide key={index}>
-          <div className="bg-white-10 p-6 rounded-2xl flex flex-col gap-4 drop-shadow-[0_12px_27px_rgba(12,30,62,0.12)]">
+          <div className="bg-white-10 p-6 rounded-2xl flex flex-col gap-4 drop-shadow-[0_12px_27px_rgba(12,30,62,0.12)] md:drop-shadow-lg">
           <DoubleQuoteIcon />
           <p className="text-base text-black-80">{message}</p>
           <div className="flex gap-2">

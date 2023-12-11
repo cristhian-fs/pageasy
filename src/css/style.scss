@@ -95,6 +95,9 @@ code {
 .feedbackSwiper{
   overflow: visible!important;
 }
+@media only screen and (min-width: 768px){
+  
+}
 
 .swiper-button-next {
   position: absolute !important;
@@ -147,3 +150,4 @@ code {
 .ctadiv{
   background: radial-gradient(324.88% 141.42% at 100% 0%, #0C1E3E 0%, #040810 100%);
 }
+

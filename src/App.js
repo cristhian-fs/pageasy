@@ -1,7 +1,7 @@
 import React from "react";
 
 //components
-import NavMenuMobile from './components/NavMenuMobile'
+import NavMenu from './components/NavMenu'
 import Hero from "./components/Hero";
 import FeaturesSection from "./components/FeaturesSection";
 import Advantages from "./components/Advantages";
@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <NavMenuMobile />
+      <NavMenu />
       <Hero />
       <FeaturesSection />
       <Advantages />
