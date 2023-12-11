@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38ad3d73.css",
+    "main.js": "/static/js/main.bc333b62.js",
+    "static/media/SFProDisplay-Medium.woff": "/static/media/SFProDisplay-Medium.d6311c23bbcb6163e18f.woff",
+    "static/media/SFProDisplay-Bold.woff": "/static/media/SFProDisplay-Bold.937ee7fe7e0b16ff1cd5.woff",
+    "static/media/SFProDisplay-Regular.woff": "/static/media/SFProDisplay-Regular.2ee6eb03984d6d564772.woff",
+    "static/media/heroMainImage.png": "/static/media/heroMainImage.c167dc6f7a5598c5917d.png",
+    "static/media/SFProDisplay-Medium.woff2": "/static/media/SFProDisplay-Medium.062b6188d5465a356866.woff2",
+    "static/media/SFProDisplay-Bold.woff2": "/static/media/SFProDisplay-Bold.1c2dc0d848f2dd611d32.woff2",
+    "static/media/dashBoardImageS3.png": "/static/media/dashBoardImageS3.54bb77d76584b2bbbc19.png",
+    "static/media/SFProDisplay-Regular.woff2": "/static/media/SFProDisplay-Regular.68dd00a1b4d020df3bd9.woff2",
+    "static/media/whiteIphoneS3.png": "/static/media/whiteIphoneS3.81b77d0e3219c88126b9.png",
+    "static/media/blackIphoneS3.png": "/static/media/blackIphoneS3.08cb3ef0069ebe49bee7.png",
+    "static/media/iphoneCta.png": "/static/media/iphoneCta.02cff40af2e8708880a2.png",
+    "static/media/acceptationImage.png": "/static/media/acceptationImage.f32c12558e2210a2f7e1.png",
+    "static/media/docsImage.png": "/static/media/docsImage.ee82f6feafd5c1534d52.png",
+    "static/media/integrationImage.png": "/static/media/integrationImage.c6edd9d815dadf1afed8.png",
+    "static/media/AeonikProTRIAL-Bold.woff": "/static/media/AeonikProTRIAL-Bold.3e7e2501ec952374cd0c.woff",
+    "static/media/AeonikProTRIAL-Regular.woff": "/static/media/AeonikProTRIAL-Regular.e69769551f189d079bb4.woff",
+    "static/media/AeonikProTRIAL-Bold.woff2": "/static/media/AeonikProTRIAL-Bold.d90892f87ea8c7161c7b.woff2",
+    "static/media/AeonikProTRIAL-Regular.woff2": "/static/media/AeonikProTRIAL-Regular.4bc2c40c3c1e4ab3874e.woff2",
+    "index.html": "/index.html",
+    "static/media/arrowRightSwiper.svg": "/static/media/arrowRightSwiper.3d94f124806d544bface.svg",
+    "static/media/arrowLeftSwiper.svg": "/static/media/arrowLeftSwiper.79faa91e5f7b2a377e6d.svg",
+    "main.38ad3d73.css.map": "/static/css/main.38ad3d73.css.map",
+    "main.bc333b62.js.map": "/static/js/main.bc333b62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ad3d73.css",
+    "static/js/main.bc333b62.js"
+  ]
+}
